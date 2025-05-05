@@ -75,7 +75,7 @@ public class FusionNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     {
     }
 
-    public void OnDisconnectedFromServer(NetworkRunner runner, NetDisconnectReason reason)
+    public void OnDisconnectedFromServer (NetworkRunner runner, NetDisconnectReason reason)
     {
         gameMessageTM.text = "Host connection lost. Please close the game.";
     }

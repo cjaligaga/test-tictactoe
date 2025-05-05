@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using Fusion;
 using TMPro;
 using UnityEngine;
@@ -38,6 +39,8 @@ public class GridButton : NetworkBehaviour
 
     public void OnSymbolChanged ()
     {
+        if (CurrentSymbol != Symbol.None) button.transform.DOPunchScale (Vector3.one * 0.15f, 0.5f);
+        
         symbolTM.text = CurrentSymbol switch
         {
             Symbol.None => string.Empty,
