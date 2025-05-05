@@ -41,7 +41,7 @@ public class FusionNetworkManager : MonoBehaviour, INetworkRunnerCallbacks
             new StartGameArgs
             {
                 GameMode = GameMode.AutoHostOrClient,
-                SessionName = "",
+                SessionName = "tic",
                 PlayerCount = 2,
                 Scene = sceneInfo,
                 SceneManager = currentRunner.gameObject.AddComponent<NetworkSceneManagerDefault>()

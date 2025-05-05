@@ -145,7 +145,7 @@ public class TicTacToeManager : NetworkBehaviour, IPlayerJoined, IPlayerLeft
 
     public void PlayerLeft (PlayerRef player)
     {
-        gameMessageTM.text = "Someone left. Please close the game.";
+        gameMessageTM.text = "Opponent left. Please close the game.";
         resetButton.interactable = false;
         
         foreach (GridButton gridButton in gridButtons)
